@@ -1,11 +1,9 @@
-body{
-    background-color: hsl(212, 45%, 89%);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.big{
-    margin: auto;
-    text-align: center;
-}
 .image{
     width: auto;
     height: 60%;
@@ -15,29 +13,25 @@ body{
     font-family: Outfit;
     src: url("./fonts/Outfit-Regular.ttf");
 }
-@media (max-width: 375px) {
-    .big{
-        margin-left: 1%;
-        width: 100%;
-        
-    }
-    #container{
-        width: 250px;
-        height: 370px;
-    }
+body{
+    display: flex;
+    background-color: hsl(212, 45%, 89%);
+    align-items: center;
+    height: 100vh;
 }
 #container
 {
     width: 230px;
     height: 370px;
     border-radius: 15px;
-    margin-top: 5%;
+    margin: 10% auto;
     background-color: hsl(0, 0%, 100%);
     padding: 10px;
     font-family: Outfit,sans-serif;
 }
 .below{
     margin-top: 10px;
+    text-align: center;
 }
 #below-one{
     color: hsl(218, 44%, 22%);
@@ -45,7 +39,7 @@ body{
     font-size: 15px;
 }
 #below-two{
-    color: hsl(212, 45%, 89%);
+    color: hsl(220, 15%, 55%);
     font-weight: 400;
     font-size: small;
 }
