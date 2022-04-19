@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Outfit;
+    src: url("./fonts/Outfit-Regular.ttf");
+}
+body{
+    display: flex;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    align-items: center;
+    font-family: Outfit, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    justify-content: space-between;
+}
+.container{
+    margin: 0 auto;
+    width: 250px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    font-size: 16px;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+    opacity: 0.1;
+}
+
+#image-container{
+    width: auto;
+    height: 55%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    padding: 0.2px;
+    position: relative;
+}
+
+
+#view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+.image{
+    width: auto;
+    height: 101%;
+    border-radius: 10px;
+    padding: -1.1px;
+    position: relative;
+}
+.content{
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    height: 50%;
+    justify-content: space-between;
+}
+#sale{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 0;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+p a{
+    font-weight: 0;
+}
+img:hover{
+    opacity: 0.5;
+}
+#image-container:hover{
+    background-color: hsl(178, 100%, 50%);
+}
+#image-container:hover #view{
+    opacity: 1;
+} 
+#count{
+    display: flex;
+    flex-direction: row;
+}
+#crypto{
+    margin-right: 15px;
+    transform: translate(0%, 24%);
+}
+#crypto img{
+    width: 8px;
+    height: auto;
+}
+#crypto a{
+    font-size: 13px;
+    color: hsl(178, 100%, 50%);
+}
+
+#count{
+    padding: 10px;
+}
+.footer{
+    display:flex;
+    margin-top: 5px;
+}
+.footer p{
+    margin-left: 10px;
+}
+.footer img{
+    margin-bottom: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+#footerword{
+    margin-top: 3px;
+}
