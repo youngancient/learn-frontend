@@ -45,7 +45,7 @@ body{
     height: 70px;
     border-radius: 10px;
     margin-top: -55px;
-    margin-left: 10px;
+    margin-left: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +53,6 @@ body{
 }
 .sub-content{
     display: flex;
-    
     width: 90%;
 }
 .bold{
@@ -91,7 +90,7 @@ body{
     justify-content: space-evenly;
 }
 .btn-1{
-    transform: translate(-55%, -80%);
+    transform: translate(-56%, -80%);
 }
 .btn-style{
     width: 220%;
@@ -107,7 +106,7 @@ body{
     box-shadow: 0px 15px 5px hsl(245, 75%, 95%);
 }
 .btn-2{
-    transform: translate(-55%, -50%);
+    transform: translate(-56%, -50%);
 }
 .colored:hover{
     background-color: hsl(245, 75%, 65%);
