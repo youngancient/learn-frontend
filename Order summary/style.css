@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container{
+    background-color: white;
+    width: 300px;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.image-container{
+    width: auto;
+    height: 55.25%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.top{
+    padding: 10px;
+    margin-top: -50%;
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: -55px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.sub-content{
+    display: flex;
+    
+    width: 90%;
+}
+.bold{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.heading p{
+    font-size: 20px;
+}
+.word-div{ 
+    padding: 10px;
+    color: hsl(224, 23%, 55%);
+}
+.small{
+    font-size: 12px;
+    font-weight: 500;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.only{
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+}
+.only a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 65%);
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btn-1{
+    transform: translate(-55%, -80%);
+}
+.btn-style{
+    width: 220%;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    border: none;
+}
+.colored{
+    display: inline-block;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 15px 5px hsl(245, 75%, 95%);
+}
+.btn-2{
+    transform: translate(-55%, -50%);
+}
+.colored:hover{
+    background-color: hsl(245, 75%, 65%);
+}
+.nocolor{
+    display: inline-block;
+    color: hsl(224, 23%, 55%);
+    background: transparent;
+    font-weight: 900;
+}
+.nocolor:hover{
+    color: hsl(223, 47%, 23%);
+}
