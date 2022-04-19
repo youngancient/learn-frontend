@@ -26,6 +26,7 @@ body{
     padding: 15px;
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 10px hsl(217, 54%, 10%);
 }
 #header{
     font-size: 16px;
