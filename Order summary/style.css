@@ -17,6 +17,9 @@ body{
     body{
         background-image: url(./images/pattern-background-mobile.svg);
     }
+    .container{
+        margin: 10% auto;
+    }
 }
 
 .container{
