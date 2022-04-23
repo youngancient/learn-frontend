@@ -74,20 +74,20 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
 }
-.btn button{
-    /* background: transparent; */
-    border: none;
+.btn a{
+    text-decoration: none;
     padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
     border-radius: 20px;
+    text-align: center;
     width: 40%;
     height: 45px;
-    font-size: 15px;
-    font-weight: 500;
-    background-color: white;
     color: hsl(257, 40%, 49%);
     box-shadow: 3px 3px 5px 7px hsl(257, 40%, 45%);
 }
-.btn button:hover{
+.btn a:hover{
     background-color: hsl(300, 69%, 71%);
 }
 
@@ -173,6 +173,7 @@ body{
     .btn{
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
     } 
