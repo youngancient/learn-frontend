@@ -91,7 +91,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 900;
 }
 .btn-1{
     transform: translate(-56%, -80%);
