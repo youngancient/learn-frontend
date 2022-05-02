@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bdr{
+    border: 1px solid black;
+}
+body{
+    background: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 17px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.head{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-size: 34px;
+    margin-left: 5px;
+}
+.container{
+    height: 95vh;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+}
+.cont{
+    padding: 50px;
+}
+.icon{
+    width: 45px;
+    height: 35px;
+}
+.cont-1{
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cont-2{
+    background: hsl(184, 100%, 22%);
+}
+.cont-3{
+    background: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.content{
+    margin-top: 20px;
+    height: 200px;
+}
+.body{
+    width: 250px;
+    height: 130px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+a {
+    text-decoration: none;
+    background: hsl(0, 0%, 95%);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 40px;
+    text-align: center;
+}
+a:hover{
+    /* this makes the background transparent but translucent also */
+    background: rgba(255,255,255,0.1);  
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.btn{
+    margin-top: 40px;
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+    box-shadow: 5px 10px 5px hsl(31, 77%, 48%);
+}
+.btn-2{
+    color: hsl(184, 100%, 22%);
+    box-shadow: 5px 10px 5px hsl(184, 100%, 19%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+    box-shadow: 5px 10px 5px hsl(179, 100%, 9%);
+}
+
+@media screen and (min-width: 728px) {
+    .head{
+        font-size: 28px;
+    }
+    body{
+        font-size: 13px;
+    }
+    .cont{
+        padding: 40px;
+    }
+    .container{
+        margin-top: 100px;
+        width: 60vw;
+        height: 65vh;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .content{
+        height: 200px;
+    }
+    .body{
+        margin-top: 25px;
+        width: 190px;
+        height: 100px;
+        line-height: 20px;
+    }
+    a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .cont-1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .cont-3{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
