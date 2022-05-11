@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif; 
+    color: hsl(217, 12%, 63%);  
+}
+.bdr{
+    border: 1px solid white;
+}
+.container{
+    background: hsl(213, 19%, 18%);
+    width: 80vw;
+    height: 45vh;
+    margin: 0 auto;
+    margin-top: 42%;
+    border-radius: 15px;
+    padding: 20px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.image{
+    margin-top: 5px;
+    background: hsl(217, 12%, 24%);
+    border-radius: 50%;
+    padding: 10px;
+}
+h2,a{
+    color: hsl(0, 0%, 100%);
+}
+.word-content{
+    margin-top: 20px;
+}
+.word-content p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    height: 99px;
+}
+.rating-grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+.rating-grid a{
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    padding:15px;
+    background: hsl(217, 12%, 24%);
+    margin-bottom: 40px;
+}
+.submit-btn{
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 14px;
+    background: hsl(25, 97%, 53%);
+    box-shadow: 2px 5px 5px hsl(213, 19%, 15%);
+    letter-spacing: 3px
+}
+.submit-btn:hover{
+    color: hsl(25, 97%, 53%);
+    background: hsl(0, 0%, 100%);
+}
+.rating:hover{
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+}
+@media screen and (max-width: 380px){
+    h2{
+        font-size: 20px;
+    }
+    .word-content p{
+        font-size: 15px;
+    }
+    .rating-grid{
+        margin-top: 5px;
+    }
+    .rating-grid a{
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .submit-btn{
+        font-size: 11px;
+        padding-left: 121px;
+        padding-right: 121px;
+    }
+}
+@media screen and (max-width: 360px){
+    .word-content p{
+        font-size: 13px;
+    }
+    .submit-btn{
+        padding-left: 110px;
+        padding-right: 110px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 390px){
+    .submit-btn{
+        padding-left: 122px;
+        padding-right: 122px;
+    }
+}
+@media screen and (min-width: 728px) {
+    /* width: 290px;
+    height: 300px; */
+    .container{
+        width: 20vw;
+        height: 48vh;
+        margin: 0 auto;
+        margin-top: 120px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .word-content p{
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        width: auto;
+        height: auto;
+    }
+    .rating-grid{
+        margin-top: 20px;
+    }
+    .rating-grid a{
+        padding: 8px;
+    }
+    .submit-btn{
+        padding-left: 105px;
+        padding-right: 105px;
+        font-size: 13px;
+    }
+}   
