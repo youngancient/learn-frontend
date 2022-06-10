@@ -68,7 +68,10 @@ main {
   align-items: center;
   padding: 10px;
 }
-
+.login-main{
+  margin-top: 0;
+  height: 100vh;
+}
 input {
   background: hsl(212, 45%, 89%);
   margin-top: 5px;
@@ -115,9 +118,14 @@ input[type="password"] {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 2px hsl(212, 6%, 54%);
+  width: 100vw;
 }
 form {
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 form div {
   display: flex;
@@ -131,6 +139,7 @@ form div {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 button {
   outline: 0;
@@ -141,22 +150,14 @@ button {
   color: white;
   font-weight: 700;
   font-size: 14px;
-  width: 95%;
+  width: 100%;
   cursor: pointer;
   letter-spacing: 3px;
 }
-button:hover {
-  font-size: 17px;
-  width: 100%;
-}
 form button{
-    margin-top: 20px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-form button:hover {
-  font-size: 15px;
-  width: 100%;
+  margin-top: 30px;
+  font-size: 12px;
+  border-radius: 10px;
 }
 .bdr {
   border: 1px solid black;
@@ -186,6 +187,23 @@ footer span {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 430px) and (max-width: 728px) {
+  .form{
+    width: auto;
+  }
+  button{
+    width: 97%;
+  }
+  button:hover {
+    font-size: 17px;
+    width: 100%;
+  }
+  form button:hover {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 728px) {
   header,
   footer {
@@ -197,6 +215,9 @@ footer span {
   }
   header {
     width: 70%;
+  }
+  .form{
+    width: auto;
   }
   nav {
     display: flex;
@@ -254,5 +275,16 @@ footer span {
   }
   .login input{
       width: 350px;
+  }
+  button{
+    width: 97%;
+  }
+  button:hover {
+    font-size: 17px;
+    width: 100%;
+  }
+  form button:hover {
+    font-size: 15px;
+    width: 100%;
   }
 }

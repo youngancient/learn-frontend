@@ -57,10 +57,10 @@ nav a:hover{
   display: none;
   position: absolute;
   right: 10%;
-  top: 110%;
+  top: 100%;
   width: 50%;
   border-radius: 5px;
-  background: white;
+  background: hsl(212, 45%, 89%);
   padding: 5px;
   justify-content: center;
   align-items: center;
