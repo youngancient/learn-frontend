@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.bdr {
+  border: 1px solid black;
+}
+body {
+  background: #02075d;
+  font-size: 17px;
+  font-family: "Lexend Deca", sans-serif;
+}
+header {
+  height: 5vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.links a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.links a:hover {
+  text-decoration: underline hsla(0, 0%, 100%, 0.75) solid 3px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+.main {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main div {
+  width: 80vw;
+  height: 150px;
+  margin-top: 10px;
+}
+.orange {
+  background: orangered;
+}
+.yellow {
+  background: #f5bd1f;
+}
+.green {
+  background: green;
+}
+.blue {
+  background: #00bfff;
+}
+@media screen and (min-width: 728px) {
+  .main div {
+    width: auto;
+    height: auto;
+    margin-top: 0;
+  }
+  body {
+    font-size: 13px;
+  }
+  header {
+    margin-top: 30px;
+  }
+  header .links {
+    width: 20%;
+  }
+  main {
+    height: 100vh;
+    margin-top: 0;
+    padding: 0;
+  }
+  .orange {
+    grid-area: first;
+  }
+  .yellow {
+    grid-area: sec;
+  }
+  .green {
+    grid-area: third;
+  }
+  .one{
+    grid-area: fourth;
+  }
+  .two {
+    grid-area: fifth;
+  }
+
+  .main {
+    width: 60vw;
+    display: grid;
+    height: 70vh;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "first first first first sec sec"
+    "first first first first sec sec"
+    "third third third fourth fourth fourth"
+    "third third third fifth fifth fifth"
+    ;
+  }
+}
+
